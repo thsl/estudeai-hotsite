@@ -1,0 +1,159 @@
+.navbar-theme {
+  -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  transition: background .5s ease-in-out, padding .5s ease-in-out;
+  @media (min-width: 767px) {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+
+  }
+  .logo-theme {
+    h1 {
+      margin: 18px 0 0 0;
+      padding: 0;
+      @media (max-width: @screen-sm) {
+        margin: 0;
+      }
+      a {
+        width: 109px;
+        height: 29px;
+        background: url("@{image-path-theme}/logos/estudeai-logo-w.png") no-repeat left top;
+        text-indent: -90000px;
+        display: block;
+        @media (max-width: @screen-sm) {
+          width: 60px;
+          height: 36px;
+          background-size: 100%;
+
+        }
+      }
+    }
+  }
+  .navbar-theme-collapse {
+    float: right;
+    @media (max-width: 767px) {
+      float: none;
+    }
+  }
+  .navbar-toggle {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @white;
+    border: none;
+    border-left: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 0;
+    margin-top: 10px;
+    @media (max-width: @screen-md) {
+      margin: 0;
+    }
+  }
+  &.navbar-fixed-top {
+    //border-top: 5px solid @laranja-theme;
+  }
+  .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background: transparent;
+
+  }
+  .open {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px 8px 0px 0px;
+    -moz-border-radius: 8px 8px 0px 0px;
+    -webkit-border-radius: 8px 8px 0px 0px;
+    border: none;
+    border-bottom: 0;
+
+    .dropdown-menu {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 0px 0px 8px 8px;
+      -moz-border-radius: 0px 0px 8px 8px;
+      -webkit-border-radius: 0px 0px 8px 8px;
+      border: none;
+      border-top: 0;
+      margin: 0;
+      a {
+        color: #fff;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.2);
+
+        }
+      }
+    }
+  }
+
+}
+
+.top-nav-collapse {
+  .open {
+    background-color: transparent;
+    .dropdown-menu {
+      background-color: rgba(0, 0, 0, 0.9);
+      margin-top: 10px;
+
+      a {
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.9);
+        }
+      }
+    }
+  }
+}
+
+.navbar-nav-theme {
+  margin-top: 10px;
+  > li {
+    > a {
+      color: @white;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 700;
+      &:hover, &:focus {
+        background-color: transparent;
+      }
+      @media (max-width: 995px) {
+        padding: 15px 6px;
+        text-align: center;
+      }
+    }
+    .login {
+      color: @white;
+      background-color: transparent;
+      border: 2px solid @white;
+      border-radius: 5px;
+      padding: 6px 15px;
+      margin-top: 6px;
+    }
+    .btn-experimente {
+      background-color: @blue-light-one;
+      &:hover {
+        background-color: darken(@blue-light-one, 30%);
+        color: @white;
+      }
+
+    }
+
+  }
+
+}
+
+// COntrola a fade do menu
+.navbar-theme {
+  padding: 40px 20px;
+  background-color: transparent;
+  @media (max-width: @screen-sm) {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+.top-nav-collapse {
+  padding: 10px 20px !important;
+  background-color: rgba(0, 0, 0, 0.9);
+  @media (max-width: @screen-sm) {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+

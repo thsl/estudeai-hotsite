@@ -1,0 +1,157 @@
+.wrapper {
+  background-color: #fff;
+
+}
+
+.main-header {
+  &.header-home {
+    min-height: 450px;
+    max-height: 450px;
+    //overflow: hidden;
+    background: url("@{image-path-theme}/backgrounds/header-bck.png") right bottom no-repeat rgba(62, 62, 88, 1);
+    .header-img {
+      position: relative;
+      img {
+        position: absolute;
+        top: 100px;
+        right: 30px;
+      }
+      @media (max-width: @screen-sm) {
+        display: none;
+      }
+    }
+  }
+  &.header-titles {
+    min-height: 250px;
+    max-height: 250px;
+    overflow: hidden;
+    background: rgba(62, 62, 88, 1);
+  }
+  color: @white;
+
+  @media (max-width: @screen-sm) {
+    text-align: center;
+  }
+  .header-txt {
+    margin-top: 140px;
+  }
+  .header-form {
+    margin-top: 60px;
+    max-width: 400px;
+    .btn, input {
+      height: 52px;
+    }
+    input {
+      background: rgba(255, 255, 255, 0.2);
+      color: @white;
+      border: none;
+    }
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      color: @white;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: @white;
+      opacity: 1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: @white;
+      opacity: 1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: @white;
+    }
+    .btn {
+      background-color: #3DBDB6;
+      color: @white;
+      font-weight: 700;
+    }
+  }
+
+}
+
+.section-explica {
+  margin: 60px 0;
+  padding: 30px 0;
+  .img-explica {
+    height: 135px;
+    position: relative;
+    margin: 16px 0 16px 0;
+    img {
+      position: absolute;
+      bottom: 0;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+.section-detalha {
+  margin: 60px 0 0 0;
+  padding: 60px 0;
+  color: @white;
+  background: #86c6c2; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #86c6c2 0%, #014567 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #86c6c2 0%, #014567 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #86c6c2 0%, #014567 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#86c6c2', endColorstr='#014567', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+.section-plano {
+  padding: 80px 0;
+  color: @white;
+  background: url("@{image-path-theme}/backgrounds/plans-bck.jpg") #27314A;
+  background-size: cover;
+}
+
+.section-contato {
+  padding: 60px 0;
+  #form-contato {
+    button {
+      border: 0;
+      background-color: #27314A;
+      text-transform: uppercase;
+      font-size: 1em;
+      color: @white;
+      padding: 7px 20px 5px 20px;
+    }
+    input, textarea {
+      border-radius: 8px;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      border: 1px solid rgba(39, 49, 74, 0.4);
+      background-color: rgba(39, 49, 74, 0.1);
+      color: #27314A;
+      padding: 25px 10px 25px 20px;
+    }
+    ::-webkit-input-placeholder {
+      color: rgba(39, 49, 74, 0.5);
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+      color: rgba(39, 49, 74, 0.5);
+    }
+
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: rgba(39, 49, 74, 0.5);
+    }
+
+    :-ms-input-placeholder {
+      color: rgba(39, 49, 74, 0.5);
+    }
+  }
+}
+
+.footer-page {
+  padding: 32px 0;
+  background-color: #EE7723;
+  text-align: center;
+  color: @white;
+  font-size: 90%;
+  a {
+    color: @white;
+    &:hover {
+      color: @white;
+    }
+  }
+}
