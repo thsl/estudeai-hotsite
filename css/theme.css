@@ -502,7 +502,7 @@ body {
   }
 }
 a {
-  color: #53b7f6;
+  color: #2a77a8;
   text-decoration: none;
 }
 a:hover,
@@ -1164,7 +1164,7 @@ h6,
 body {
   width: 100%;
   height: 100%;
-  background-color: #EE7723;
+  background-color: #3e3e58;
 }
 html {
   width: 100%;
@@ -1189,6 +1189,69 @@ html {
 }
 .carousel .carousel-inner .item {
   padding: 0 80px 0 80px;
+}
+.modal-open .content-body {
+  filter: blur(3px) grayscale(100%);
+  transition: 0.5s;
+  overflow: hidden;
+  height: 100%;
+}
+.modal-open .modal-backdrop {
+  background-color: #10101a;
+}
+.modal-open .modal-backdrop.in {
+  opacity: 0.95 !important;
+}
+.modal-dark .modal-content {
+  border-radius: 0;
+  color: #ffffff;
+  box-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.modal-dark .modal-content a {
+  color: #ffffff;
+}
+.custom-form {
+  text-align: left;
+  font-family: "montserrat", "opensans", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.custom-form textarea {
+  resize: none;
+}
+.custom-form .form-control {
+  padding: 15px;
+  height: auto !important;
+}
+.custom-form .btn {
+  text-transform: uppercase;
+  padding: 15px;
+}
+.custom-form input,
+.custom-form textarea {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  border-bottom-width: 3px;
+  text-align: left;
+}
+.custom-form ::-webkit-input-placeholder {
+  color: #fff;
+}
+.custom-form :-moz-placeholder {
+  color: #fff;
+}
+.custom-form ::-moz-placeholder {
+  color: #fff;
+}
+.custom-form :-ms-input-placeholder {
+  color: #fff;
+}
+.blue-btn {
+  background-color: #3DBDB6;
+  color: #ffffff;
+  font-weight: 700;
 }
 .wrapper {
   background-color: #fff;
@@ -1338,7 +1401,7 @@ html {
 }
 .footer-page {
   padding: 32px 0;
-  background-color: #EE7723;
+  background-color: #3e3e58;
   text-align: center;
   color: #ffffff;
   font-size: 90%;

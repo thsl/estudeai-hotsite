@@ -1,0 +1,30 @@
+.modal-open {
+  .content-body {
+    filter: blur(3px) grayscale(100%);
+    transition: 0.5s;
+    overflow: hidden;
+    height: 100%;
+  }
+  .modal-backdrop {
+   background-color: #10101a;
+  }
+  .modal-backdrop.in {
+    opacity: 0.95 !important;
+  }
+}
+
+.modal-dark {
+  .modal-content {
+    border-radius: 0;
+    color: @white;
+    box-shadow: none;
+    background-color: transparent;
+    border: 0;
+    a {
+      color: @white;
+    }
+  }
+  .modal-content {
+
+  }
+}
